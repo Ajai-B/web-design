@@ -1,0 +1,227 @@
+<style>
+    body {
+        background: skyblue;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    .topnav {
+        background-color: #333;
+        overflow: hidden;
+    }
+
+    .topnav a {
+        float: right;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    .topnav a.active {
+        background-color: #04AA6D;
+        color: white;
+    }
+    .dropdown {
+        float: right;
+        overflow: hidden;   
+    }
+
+    .dropdown .dropbtn {
+        font-size: 16px;  
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+    }
+
+    .navbar a:hover, .dropdown:hover .dropbtn {
+        background-color: #04AA6D;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    .font {
+        font-size: 25px;
+    }
+    .grid-container {
+        position: relative;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        background-color: #2196f3;
+        padding: 10px;
+    }
+    .grid-item {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba( 0, 0, 0, 0.8);
+        padding: 20px ;
+        font-size: 30px;
+        text-align: center;
+    }
+    .contact-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: 80vh;
+        padding: 0 2rem;
+        background: gray;
+    }
+
+    .contact-section-header > h2 {
+        font-size: 6rem;
+    }
+
+    .contact-section-header > p {
+        font-style: italic;
+    }
+
+    .contact-links {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        max-width: 980px;
+        margin-top: 4rem;
+        flex-wrap: wrap;
+    }
+    .contact-links a {
+        padding: 20px;
+        text-decoration: none;
+        color: white;
+    }
+
+    .contact-details {
+        font-size: 2.4rem;
+        text-shadow: 2px 2px 1px #1f1f1f;
+        transition: transform 0.3s ease-out;
+    }
+
+    .contact-details:hover {
+        transform: translateY(8px);
+    }
+</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIT | Coimbatore Institute of Technology in Coimbatore, Tamil Nadu</title>
+</head>
+<body>
+    <div class="topnav">
+        <img src="images/index.png" height="49px" width="80px" />
+        <a href="#contact">Contact</a>
+        <a href="#Awards">Awards</a>
+        <div class="dropdown">
+            <button class="dropbtn">Departments</button>
+            <div class="dropdown-content">
+              <a href="#">Computer science & engineering</a>
+              <a href="#">civil engineering</a>
+              <a href="#">Information Technology</a>
+              <a href="#">Mathematics</a>
+              <a href="#">Artificial Intelligence and Data Science</a>
+              <a href="#">Computer Applications (MCA)</a>
+              <a href="#">Humanities</a>
+              <a href="#">Physics</a>
+              <a href="#">Chemistry</a>
+              <a href="#">Management Studies(MBA)</a>
+              <a href="#">Computing (M.Sc Five Year Integrated Programmes)</a>
+              <a href="#">IT Resource Maintenance Cell (ITRM Cell)</a>
+              <a href="#">Mechanical Engineering</a>
+              <a href="#">Electrical Electronics Engineering</a>
+              <a href="#">lectronics Communication Engineering</a>
+            </div>
+        </div>
+        <a href="#about">About Us</a>
+        <a class="active" href="#home">Home</a>
+    </div>
+    <section class="img">
+        <img src="images/clg.jpeg" height="700px" width="100%" />
+    </section>
+    <br><br>
+    <section id="about">
+        <h1>About Us:</h1>
+        <br>
+        <p class="font">&nbsp; &nbsp; &nbsp; &nbsp; The V. Rangasamy Naidu Educational Trust devoted to the cause of promoting technical and scientific literacy, established Coimbatore Institute of Technology (CIT) in Coimbatore, Tamil Nadu, South India in 1956. CIT is one of the most reputed and prestigious educational institutions in India. The Institute backed by World Class research and development over the years attained autonomous status in 1987.</p>
+    </section>
+    <br><br>
+    <h2 id="Awards">Awards:</h2><br><br>
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="images/ARIIA-Ranking-2021-e1640851059385.jpg" />
+            <p>ARIIA Ranking 2021, our institute has been awarded under the band Excellent which comes next to the five colleges.</p>
+        </div>
+        <div class="grid-item">
+            <img src="images/AIIRA-Certificate-263x359.jpg" alt="" />
+            <p>ARIIA -2020 Ranked 3rd in category of Govt and Govt Aided Institutes & Colleges</p>
+        </div>
+        <div class="grid-item">
+            <img src="images/ESQR-263x175.jpg" alt="">
+            <p>The ESQRs European Awards for Best Practices 2020 in the Diamond Category</p>
+        </div>
+        <div class="grid-item">
+            <img src="images/KIER-263x175.jpg" alt="">
+            <p>Best Outstanding Educator International Award 2020</p>
+        </div>
+        <div class="grid-item">
+            <img src="images/w11-263x186.jpg" alt="">
+            <p>WORLDCOB PINNACLE Award</p>
+        </div>
+        <div class="grid-item">
+            <img src="images/VIF-263x363.jpg" alt="">
+            <br>
+            <p>The Excellence in Higher Education Award 2020</p>
+        </div>
+    </div>
+    <section id="contact" class="contact-section">
+        <div class="contact-section-header">
+          <h2>Let's work together...</h2>
+        </div>
+        <div class="contact-links">
+          <a href="https://www.facebook.com/citcovai/" target="_blank" class="btn contact-details" ><i class="fab fa-facebook-square"></i> Facebook</a>
+          <a id="profile-link" href="" target="_blank" class="btn contact-details" ><i class="fab fa-youtube"></i> Youtube</a>
+          <a href="" target="_blank" class="btn contact-details" ><i class="fab fa-twitter"></i> Twitter</a>
+          <a href="principal.citoffice@cit.edu.in" class="btn contact-details"><i class="fas fa-at"></i> Send a mail</a>
+          <a href="" class="btn contact-details"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </div>
+      </section>
+</body>
+</html>
